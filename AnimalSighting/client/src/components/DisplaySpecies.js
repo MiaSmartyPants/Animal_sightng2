@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState, useEffect} from 'react';
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -10,10 +11,14 @@ import '../App.css';
 
 function DisplaySpecies ({speciesList}){
 
+
+
+
     class Card extends React.Component {
     render() {
       return(
-          <div className="card">
+
+          <div className="card ">
             <img src={this.props.img} />
             <div className="card-body">
               <h2>{this.props.title}</h2>
@@ -33,9 +38,9 @@ function DisplaySpecies ({speciesList}){
         <div>
        
 			
-			 <div className='cards'>
+			 <div className='cards '>
 			   <Card
-				img='https://picsum.photos/id/54/400/300'
+				img={element.endangered_img}
 				title={element.commonname}
 				author={element.estimatedpopulation} 
                 conservationstatus={element.conservationstatus}/>
@@ -49,7 +54,7 @@ function DisplaySpecies ({speciesList}){
 
 
     return(
- <div> 
+ <div className='text'> 
        
 
    <tbody>

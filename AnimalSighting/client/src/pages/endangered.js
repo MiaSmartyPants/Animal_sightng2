@@ -4,6 +4,7 @@ import "../App.css";
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DisplaySpecies from '../components/DisplaySpecies';
+import Footer from '../components/footer';
 
 const Endangered = () => {
 
@@ -37,29 +38,24 @@ const Endangered = () => {
 		return null;
   
 	  
-	// 	// key={index}
-    // console.log(element.commonname); // 100, 200, 300
-     
-	//  console.log(index); // 0, 1, 2
-    // console.log(array); // same myArray object 3 times
-	// return <p>{element.commonname}</p>
-        
-    //   });
-  
+
 	  
 
 
 return (
-	<div>
+	<div className=''>
 	<h1>Learn About Endangered Species </h1>
-	<div class="header">
+<div className='parent'>
+	<div class="header text">
 		<h3>If the particular species of animals declining continuously at 25% for three years or more it is an endangered species. * If the population of particular species is less than 50 Individuals it is identified as an endangered species.</h3>	  
 			 </div>
+			 <div className='child'>
 	<DisplaySpecies speciesList={speciesList} />
      
-            
+            </div>
       
-	  
+	  </div >
+	  <Footer />
 </div>
 
 );

@@ -45,7 +45,8 @@
 }
 
 body {
-  background: hsla(210, 20%, 90%, 1);
+  background-image: url(https://cdn.wallpapersafari.com/14/2/d6z1mf.jpg);
+  /* background: hsla(210, 20%, 90%, 1); */
   padding: 2em 0;
   line-height: 1.6;
   display: flex;
@@ -53,6 +54,7 @@ body {
   min-height: 100vh;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
+  
 }
 
 h1, h2, h3, h5 {
@@ -69,12 +71,12 @@ h1, h2, h3, h5 {
   font-size: 3em;
   margin-bottom: 0.2em;
   line-height: 1.2;
-  color: #222
+  color: rgb(192, 32, 32)
 }
 
 .header h3 {
   font-weight: 400;
-  color: #555;
+  color: rgb(255, 255, 255);
   width: 30em;
 }
 
@@ -85,13 +87,13 @@ h1, h2, h3, h5 {
 }
 
 .card {
-  background: #fff;
+  background-color: #ff9909;
   width: 24em;
   border-radius: 0.6em;
   margin: 1em;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+  box-shadow: 0 13px 27px -5px rgba(0, 0, 0, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
   transition: all ease 200ms;
 }
 
@@ -106,7 +108,7 @@ h1, h2, h3, h5 {
 }
 
 .card h2 {
-  color: #222;
+  color: rgb(243, 237, 237);
   margin-top: -0.2em;
   line-height: 1.4;
   font-size: 1.3em;
@@ -116,11 +118,11 @@ h1, h2, h3, h5 {
 }
 
 .card p {
-  color: #777;
+  color: rgb(239, 233, 233);
 }
 
 .card h5 {
-  color: #bbb;
+  color: rgb(254, 249, 249);
   font-weight: 700;
   font-size: 0.7em;
   letter-spacing: 0.04em;
@@ -130,4 +132,26 @@ h1, h2, h3, h5 {
 
 .card-body {
   padding: 1.2em;
+  background-color: #0bb02f;
+}
+
+.parent {
+
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.text{
+  color:rgb(255, 255, 255);
+  font-weight: 300;
+}
+.footer{
+  background-color: #77797d;
 }

@@ -41,7 +41,9 @@ app.get('/specieslist', db.getSpecies)
 // app.get('/events/:id', db.getEventsById)
 app.post('/specieslist', db.addToEndangered)
 // app.delete('/events/:id',db.deleteEvent)
-
+app.get('/harbor', db.getHarbor)
+app.get('/sightings', db.getSightings)
+app.post('/sightings', db.addToSighting)
 
 
 
